@@ -1,0 +1,54 @@
+---
+title       : mpgapp
+subtitle    : App that predicts the MPG of a car
+author      : Dain Thengunnal
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+github:
+  user:logicshare
+  repo:mpgapppitch
+  
+---
+
+## Introduction
+
+When buying a car, one of the most important factors one must assess about the car's performance is its mileage measured in Miles/(US) gallon (MPG).
+The major component of the running cost is the skyrocketing fuel prices and one has to be diligent when deciding which car to buy to get your moneys worth.
+
+---
+
+## Why mpgapp?
+
+This app predicts a car's MPG based on the inputs of Gross Horsepower, Weight and Transmission type of the car.
+User can adjust the inputs in such a way that the desired predicted MPG is achieved.
+
+### mpgapp screen sample
+
+![](https://logicshare.github.io/mpgapp_screenshot.jpg)
+
+---
+
+## Sample data used by mpgapp to predict MPG
+
+```{r mpgapp1,echo=TRUE}
+
+tail(subset(mtcars,select=c("mpg","hp","wt","am")),10)
+
+```
+
+---
+
+## References
+
+App link    : http://logicshare.shinyapps.io/mpgapp
+
+Source code : https://github.com/logicshare/DPPweek4Project
+
+
+
+
